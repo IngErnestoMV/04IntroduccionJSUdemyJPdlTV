@@ -2,13 +2,13 @@
 /*Ya no se utiliza*/
 const producto = 'Audifonos Gamer' //Iniciar variable y asignar valor
 
-const disponible; //Asignación de valor a la variable a futuro
+const disponible = true; //Asignación de valor a la variable a futuro
 
-// producto = true; //Reasignando el valor de la variable.
-disponible = true;
+// producto = true; // No se puede Reasignar valor de la variable.
+// disponible = true;
 
 const producto1 = 'computadora', //asignación de multiples variables
-    disponible1 = true;
+    disponible1 = true,
     categoria = 'computadoras';
 
     //Estilos de varibales
