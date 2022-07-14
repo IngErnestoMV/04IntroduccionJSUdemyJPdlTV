@@ -1,9 +1,17 @@
-//String o Cadenas de Texto
-const producto = "Monitor de 20 Pulgadas";
-const producto2 = String('Monitor 30 Pulgadas');
-const producto3 = new String('Monitor 50 Pulgadas');
+//String o Cadenas de Texto.
+const tweet = 'Aprendiendo JavaScript con el curso de Desarollo web Completo';
+const producto2 = 'Monitor HD';
+const email = 'correo@c'
 
+//Es para cuantos caracteres tiene la extención de la palabra.
+console.log(tweet.length);
+console.log(producto2.length);
 
-console.log(typeof producto);
-console.log(typeof producto2);
-console.log(typeof producto3);
+//IndexOf(retorna posición
+console.log(tweet.indexOf('JavaScript'));
+console.log(producto2.indexOf('Tablet'));
+console.log(email.indexOf('@'));
+
+//Includes retorna (true o false)
+console.log(tweet.includes('JavaScript'));
+console.log(producto2.includes('Tablet'));
