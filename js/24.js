@@ -30,6 +30,34 @@ for (let i = 0; i < carrito.length; i++){
 
 // While Loop
 
+// let i = 0; // Indice o valor inicial
 
+// while(i <= 10){ // Condición
+
+//     if(i % 2 ===0){
+//         console.log(`El número ${i} es par.`)
+//     } else{
+//         console.log(`El número ${i} es impar.`)
+//     }
+//     i++; // Incremento
+// }
+
+// while(i < carrito.length){
+//     console.log(carrito[i].nombre)
+//     i++;
+// }
+
+// i = 20;
+// while(i<10){
+//     console.log('Desde el while loop')
+//     i++;
+// }
 
 // Do While Loop
+
+let i = 0; // Indice o valor inicial
+
+do {
+    console.log(i);
+    i++ // Incremento
+} while (i < 10); // Condición
