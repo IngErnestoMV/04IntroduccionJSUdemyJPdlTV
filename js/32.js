@@ -9,10 +9,26 @@ function descargarNuevosClientes(){
     });
 }
 
+function descargarUltimosPedidos(){
+    return new Promise(resolve => {
+        console.log('Descargando pedidos... espere...');
+        setTimeout( () => {  //Sirve para hacer una pasusa de 5 segundos
+            resolve('Los pedidos Fueron Descargados');
+        }, 3000);
+    });
+}
+
 async function app() {
     try{
-        const resultado = await descargarNuevosClientes();
-        console.log(resultado);
+        //Esta forma bloquea el segundo await y no permite que se descarguen ambas solicitudes la mismo tiempo.
+        // const clientes = await descargarNuevosClientes(); 
+        // const pedidos = await descargarUltimosPedidos();
+        // console.log(clientes);
+        // console.log(pedidos);
+
+        const resultado = await Promise.all([descargarNuevosClientes(), descargarUltimosPedidos()]);
+        console.log(resultado[0]);
+        console.log(resultado[1]);
     }catch (error) {
         console.log(error);
     }
